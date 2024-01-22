@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MealsApp">
+  <ClassDiagramComponents>
+    <Class name="CategoryList" package="Classes" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="meals" type="String" visibility="private"/>
+        <Field name="strMeal" type="ArrayList&lt;String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="meals"/>
+          <Argument type="ArrayList&lt;String&gt;" name="strMeal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMeals" returnType="String" visibility="public"/>
+        <Method name="getStrMeal" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+        <Method name="setCategories" returnType="void" visibility="public">
+          <Argument type="String" name="meals"/>
+        </Method>
+        <Method name="setStrMeals" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;String&gt;" name="strMeal"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CategoryListData" package="Classes" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="categories" type="String" visibility="private"/>
+        <Field name="strCategory" type="ArrayList&lt;String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="categories"/>
+          <Argument type="ArrayList&lt;String&gt;" name="strCategory"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCategories" returnType="String" visibility="public"/>
+        <Method name="getStrCategory" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+        <Method name="setCategories" returnType="void" visibility="public">
+          <Argument type="String" name="categories"/>
+        </Method>
+        <Method name="setStrCategory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;String&gt;" name="strCategory"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Meals" package="Classes" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="strMeal" type="String" visibility="private"/>
+        <Field name="strCategory" type="String" visibility="private"/>
+        <Field name="strArea" type="String" visibility="private"/>
+        <Field name="strInstructions" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getstrMeal" returnType="String" visibility="public"/>
+        <Method name="setstrMeal" returnType="void" visibility="public">
+          <Argument type="String" name="strMeal"/>
+        </Method>
+        <Method name="getCategory" returnType="String" visibility="public"/>
+        <Method name="setstrCategory" returnType="void" visibility="public">
+          <Argument type="String" name="strCategory"/>
+        </Method>
+        <Method name="getArea" returnType="String" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="String" name="strArea"/>
+        </Method>
+        <Method name="getstrInstuctions" returnType="String" visibility="public"/>
+        <Method name="setstrInstructions" returnType="void" visibility="public">
+          <Argument type="String" name="strInstructions"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MealsData1" package="Classes" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="meals" type="ArrayList&lt;Meals&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getMeals" returnType="ArrayList&lt;Meals&gt;" visibility="public"/>
+        <Method name="setdMeals" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Meals&gt;" name="value"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Chart" package="Forms" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="emf" type="EntityManagerFactory" visibility="package" isStatic="true"/>
+        <Field name="em" type="EntityManager" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="createEMFandEM" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Data" package="Forms" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="count" type="Integer" visibility="private"/>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="area" type="String" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="instructions" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getArea" returnType="String" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="String" name="area"/>
+        </Method>
+        <Method name="getCategory" returnType="String" visibility="public"/>
+        <Method name="setCategory" returnType="void" visibility="public">
+          <Argument type="String" name="category"/>
+        </Method>
+        <Method name="getInstructions" returnType="String" visibility="public"/>
+        <Method name="setInstructions" returnType="void" visibility="public">
+          <Argument type="String" name="instructions"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getCount" returnType="Integer" visibility="public"/>
+        <Method name="setCount" returnType="void" visibility="public">
+          <Argument type="Integer" name="count"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainFrm" package="Forms" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MealsData" package="Forms" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="meals" type="MealsData1" visibility="package"/>
+        <Field name="emf" type="EntityManagerFactory" visibility="package" isStatic="true"/>
+        <Field name="em" type="EntityManager" visibility="package" isStatic="true"/>
+        <Field name="DataTable" type="javax.swing.JTable" visibility="public"/>
+        <Field name="Instructions" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="NameOfMeal" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="SearchBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane4" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="createEMFandEM" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="NameOfMealActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SearchBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="DataTableAncestorAdded" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.AncestorEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="SearchMeal" returnType="void" visibility="private">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="insertdata" returnType="void" visibility="private" isStatic="true">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Area"/>
+          <Argument type="String" name="Category"/>
+          <Argument type="String" name="Instructions"/>
+          <Argument type="int" name="count"/>
+        </Method>
+        <Method name="DeleteData" returnType="void" visibility="private" isStatic="true">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="FindRecord" returnType="boolean" visibility="private" isStatic="true">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Data" name="d"/>
+        </Method>
+        <Method name="FindRecord1" returnType="Data" visibility="private" isStatic="true">
+          <Argument type="String" name="name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MealsList" package="Forms" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="label1" type="java.awt.Label" visibility="private"/>
+        <Field name="label2" type="java.awt.Label" visibility="private"/>
+        <Field name="list1" type="java.awt.List" visibility="private"/>
+        <Field name="list2" type="java.awt.List" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="list2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="searchCategory" returnType="void" visibility="public"/>
+        <Method name="getStrMeal" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MealsName" package="Forms" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PdfTable" package="Forms" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="emf" type="EntityManagerFactory" visibility="package" isStatic="true"/>
+        <Field name="em" type="EntityManager" visibility="package" isStatic="true"/>
+        <Field name="PdfTable" type="javax.swing.JTable" visibility="public"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="createEMFandEM" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="PdfTableAncestorAdded" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.AncestorEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="Pdftotable" returnType="void" visibility="public"/>
+        <Method name="PdfPrint" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Forms.MealsData" target="Forms.Data" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="meals" source="Forms.MealsData" target="Classes.MealsData1" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Classes.MealsData1" target="Classes.Meals" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="meals" source="Classes.MealsData1" target="Classes.Meals" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Meals&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
